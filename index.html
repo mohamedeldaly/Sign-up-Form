@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @font-face {
+            font-family: Norse-Bold;
+            src: url(Norse-Bold.otf);
+        }
+        body {
+            margin: 0;
+        }
+        .background {
+            position: relative;
+        }
+        .photo {
+            position: absolute;
+            bottom: -400px;
+            left: 150px;
+            color: white;
+        }
+        .onimg {
+            color: white;
+        }
+        .logo {
+            display: flex;
+            align-items: center;
+            background-color: rgba(0,0,0,.5);
+            color: white;
+            justify-content: center;
+            width: 640px;
+            height: 100px;
+            position: absolute;
+            top: 200px;
+        }
+        .odin-logo {
+            width: 10%;
+        }
+        .font {
+            font-family: Norse-Bold;
+            font-size: 75px;
+        }
+        .container {
+            display: flex;
+        }
+        .flex2 {
+            align-self: center;
+            background-color: rgba(248, 248, 248, 0.699);
+        }
+        .form {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px 60px;
+            box-shadow: 0px 5px 5px #d7d7d7;
+            background-color: white;
+            padding: 20px 40px 20px 40px;
+        }
+        .scontainer {
+            display: flex;
+            flex-direction: column;
+        }
+        input {
+            width: 220px;
+            border: 1px solid #E5E7EB;
+            height: 25px;
+            border-radius: 2px;
+        }
+        .topp {
+            background-color: white;
+            margin: 0;
+            padding: 20px 40px 0 40px;
+            font-weight: 500;
+        }
+        button {
+            background-color: #596D48;
+            margin: 40px 40px 20px 40px;
+            color: white;
+            padding: 10px 40px 10px 40px;
+            border-radius: 5px;
+            border: 1px solid #596D48;
+            font-weight: bold;
+            font-size: 18px;
+        }
+        p {
+            font-size: 25px;
+        }
+        .left-padding {
+            padding-left: 40px;
+        }
+        .input:focus {
+            border-color: blue;
+            outline: blue;
+            box-shadow: 0px 3px 5px #d7d7d7;
+        }
+        input[type=password]:focus {
+            border-color: red;
+            outline: red;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+    <div class="flex1">
+    <img class="background" src="halie-west-25xggax4bSA-unsplash.jpg" alt="">
+    <p class="photo">Photo by
+     <a class="onimg" href="https://unsplash.com/@haliewestphoto?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">
+        Halie West</a> on 
+        <a class="onimg" href="https://unsplash.com/photos/green-leaf-plant-in-close-up-photography-25xggax4bSA?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">
+            Unsplash</a></p>
+    <div class="logo">
+        <img class="odin-logo" src="odin-lined.png" alt="">
+        <p class="font">ODIN</p>
+    </div>
+    </div>
+    <div class="flex2">
+    <p class="left-padding">This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams.<br>Sign up <em>now</em> to get started.</p>
+    <p class="left-padding">You <em>know</em> you want to.</p>
+    <p class="topp">Let's do this!</p>
+    <form action="/my-form-page" method="post">
+        <div class="form">
+        <div class="scontainer">
+            <label for="firstname">FIRST NAME</label>
+            <input class="input" type="text" id="firstname" name="user_firstname">
+        </div>
+        <div class="scontainer">
+            <label for="lastname">LAST NAME</label>
+            <input class="input" type="text" id="lastname" name="user_lastname">
+        </div>
+            <div class="scontainer">
+            <label for="mail">EMAIL</label>
+            <input class="input" type="email" id="mail" name="user_email">
+        </div>
+            <div class="scontainer">
+            <label for="phone_number">PHONE NUMBER</label>
+            <input class="input" type="tel" id="phone_number" name="phone_number">
+        </div>
+            <div class="scontainer">
+            <label for="user_password">PASSWORD</label>
+            <input class="error" type="password" id="user_password" name="password" pattern="[Pp]assword">
+        </div>
+            <div class="scontainer">
+            <label for="confirmuser_password">CONFIRM PASSWORD</label>
+            <input class="error" type="password" id="confirmuser_password" name="confirmpassword" pattern="[Pp]assword">
+        </div>
+    </div>
+            <button>Create Account</button>
+      </form>
+      <p class="left-padding">Already have an account? <a href="" target="_blank" rel="noopener noreferrer">Log in</a></p>
+    </div>
+</div>
+</body>
+</html>
